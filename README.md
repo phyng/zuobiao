@@ -11,14 +11,15 @@ Use django to analysis data from zuobiao.me.
     pip install -r requirements.txt
 Change `zuobiao/settings.py` for your database.
 
+    cd zuobiao && python manage.py syncdb
+
 ## Import csv data to database
 Makesure `zuobiao/2014data.csv` exists([download](http://zuobiao.me/resources/2014data.csv)), then run:
 
     python tools.py
 
 ## Run
-    cd zuobiao
-    python manage.py runserver
+    cd zuobiao && python manage.py runserver
 
 open [admin](http://127.0.0.1:8000/admin).
 
