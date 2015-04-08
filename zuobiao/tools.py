@@ -1,5 +1,4 @@
 
-
 import csv
 import os
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "zuobiao.settings")
@@ -8,10 +7,9 @@ import django
 django.setup()
 
 from dashboard.models import Question, Anser, User
-from dashboard.models import SEX_CHOICES, INCOME_CHOICES, EDU_CHOICES, ANSER_CHOICES
+from dashboard.models import INCOME_CHOICES, EDU_CHOICES, ANSER_CHOICES
 
 import datetime
-import re
 
 # Import date from csv
 with open('2014data.csv', 'r') as f:
