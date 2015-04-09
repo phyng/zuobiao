@@ -18,7 +18,7 @@ from dashboard.models import INCOME_CHOICES, EDU_CHOICES, ANSER_CHOICES
 def import_data():
     """
     Import date from csv to sql.
-    Time: < 1h
+    Time: 4622.63s
     """
     with open('2014data.csv', 'r') as f:
         reader = csv.reader(f)
@@ -35,7 +35,8 @@ def import_data():
                 if created == 'NULL' or sex == 'NULL' or not birthday:
                     continue
 
-                created = datetime.datetime.strptime(created, '%Y-%m-%d %H:%M:%S')
+                created = datetime.datetime.strptime(
+                    created, '%Y-%m-%d %H:%M:%S')
                 education = [k for k, v in EDU_CHOICES if education == v][0]
                 income = [k for k, v in INCOME_CHOICES if income == v][0]
                 sex = 1 if sex == 'M' else 2
@@ -65,22 +66,24 @@ def build_question_data(pk):
     question = Question.objects.get(pk=pk)
     ansers = question.anser_set
 
-    data = ansers.values('choice').annotate(count=Count('choice')).order_by('-count')
+    data = ansers.values('choice').annotate(
+        count=Count('choice')).order_by('-count')
     for item in data:
         for field in ['sex', 'birthday', 'income', 'education']:
             item[field] = ansers.filter(
-                choice=item['choice']
-            ).values('user__{}'.format(field)).annotate(count=Count('user__{}'.format(field))).order_by('-count')
+                choice=item['choice']).values(
+                'user__{}'.format(field)).annotate(
+                count=Count('user__{}'.format(field))).order_by('-count')
             item[field] = list(item[field])
 
     data = list(data)
     print(json.dumps(data, ensure_ascii=False, indent=4))
 
 
-
-
-
 if __name__ == '__main__':
     t0 = time.time()
-    build_question_data(15)
+
+    # build_question_data(15)
+    import_data()
+
     print('Time: {:.2f}s'.format(time.time() - t0))

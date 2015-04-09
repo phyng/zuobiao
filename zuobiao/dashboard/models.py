@@ -19,7 +19,7 @@ EDU_CHOICES = (
     (1, '初中及以下'),
     (2, '高中'),
     (3, '大学'),
-    (3, '研究生及以上'),
+    (4, '研究生及以上'),
 )
 ANSER_CHOICES = (
     (1, '强烈反对'),
@@ -33,7 +33,7 @@ class Question(models.Model):
 
     def __str__(self):
         return str(self.name)
- 
+
 class User(models.Model):
     created = models.DateTimeField()
     sex = models.IntegerField('性别', choices=SEX_CHOICES)
@@ -41,7 +41,7 @@ class User(models.Model):
     income = models.IntegerField('年收入', choices=INCOME_CHOICES)
     education = models.IntegerField('学历', choices=EDU_CHOICES)
     ip = models.CharField(u'IP', max_length=32)
-    
+
     country = models.CharField(u'IP所在国', max_length=512, null=True, blank=True)
     province = models.CharField(u'IP所在省', max_length=512, null=True, blank=True)
     city = models.CharField(u'IP所在市', max_length=512, null=True, blank=True)
@@ -58,7 +58,7 @@ class Anser(models.Model):
 
     @property
     def question_name(self):
-        return self.question.name 
-    
+        return self.question.name
+
     def __str__(self):
         return str(self.choice)

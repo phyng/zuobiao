@@ -1,13 +1,15 @@
-<md-toolbar layout="row" layout-align="center center" ng-controller="NavbarCtrl">
+<md-toolbar>
+    <div class="md-toolbar-tools">
+        <md-button class="md-icon-button" md-scroll-shrink="false" aria-label="Settings">
+            <md-icon md-svg-icon="assets/images/menu.svg"></md-icon>
+        </md-button>
+        <h2>
+            <span>Data form zuobiao.me</span>
+        </h2>
+        <span flex></span>
 
-  <md-button href="https://github.com/Swiip/generator-gulp-angular">Gulp Angular</md-button>
-
-  <section flex layout="row" layout-align="left center">
-    <md-button href="#" class="md-raised">Home</md-button>
-    <md-button href="#" class="md-raised">About</md-button>
-    <md-button href="#" class="md-raised">Contact</md-button>
-  </section>
-
-  <md-button href="#">Current date: {{ date | date:'yyyy-MM-dd' }}</md-button>
-
+        <md-button class="md-icon-button" aria-label="More">
+            <md-icon md-svg-icon="assets/images/more_vert.svg"></md-icon>
+        </md-button>
+    </div>
 </md-toolbar>
