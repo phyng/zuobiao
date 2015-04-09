@@ -25,6 +25,9 @@ class QuestionApi(View):
     def hydrate_anser_choice(self):
         data = self.ansers.values('choice').annotate(Count('choice'))
         for item in data:
-            income_data = self.ansers.filter(choice=item['choice']).values('user__income').annotate(Count('user__income'))
-            item['income'] = list(income_data)
+            for field in ['sex', 'birthday', 'income', 'education']:
+                item[field] = self.ansers.filter(
+                    choice=item['choice']
+                ).values('user__{}'.format(field)).annotate(count=Count('user__{}'.format(field))).order_by('-count')
+                item[field] = list(item[field])
         return {'ansers_count': list(data)}
