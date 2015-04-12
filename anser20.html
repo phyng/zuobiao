@@ -217,7 +217,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">PK</span> <span class="o">=</span> <span class="mi">1</span>
+<div class=" highlight hl-ipython3"><pre><span class="n">PK</span> <span class="o">=</span> <span class="mi">20</span>
 <span class="n">user_count</span> <span class="o">=</span> <span class="mi">170764</span>
 <span class="n">question</span> <span class="o">=</span> <span class="n">Question</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">pk</span><span class="o">=</span><span class="n">PK</span><span class="p">)</span>
 <span class="n">ansers</span> <span class="o">=</span> <span class="n">question</span><span class="o">.</span><span class="n">anser_set</span>
@@ -256,7 +256,7 @@ div#notebook {
 <div class="output_area"><div class="prompt output_prompt">Out[4]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<iframe id="igraph" scrolling="no" style="border:none;"seamless="seamless" src="https://plot.ly/~animos/46.embed" height="525" width="100%"></iframe>
+<iframe id="igraph" scrolling="no" style="border:none;"seamless="seamless" src="https://plot.ly/~animos/217.embed" height="525" width="100%"></iframe>
 </div>
 
 </div>
@@ -300,7 +300,7 @@ div#notebook {
 <div class="output_area"><div class="prompt output_prompt">Out[5]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<iframe id="igraph" scrolling="no" style="border:none;"seamless="seamless" src="https://plot.ly/~animos/47.embed" height="525" width="100%"></iframe>
+<iframe id="igraph" scrolling="no" style="border:none;"seamless="seamless" src="https://plot.ly/~animos/218.embed" height="525" width="100%"></iframe>
 </div>
 
 </div>
@@ -353,7 +353,7 @@ div#notebook {
 <div class="output_area"><div class="prompt output_prompt">Out[6]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<iframe id="igraph" scrolling="no" style="border:none;"seamless="seamless" src="https://plot.ly/~animos/48.embed" height="525" width="100%"></iframe>
+<iframe id="igraph" scrolling="no" style="border:none;"seamless="seamless" src="https://plot.ly/~animos/219.embed" height="525" width="100%"></iframe>
 </div>
 
 </div>
@@ -388,7 +388,7 @@ div#notebook {
 <div class="output_area"><div class="prompt output_prompt">Out[7]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<iframe id="igraph" scrolling="no" style="border:none;"seamless="seamless" src="https://plot.ly/~animos/49.embed" height="525" width="100%"></iframe>
+<iframe id="igraph" scrolling="no" style="border:none;"seamless="seamless" src="https://plot.ly/~animos/220.embed" height="525" width="100%"></iframe>
 </div>
 
 </div>
@@ -420,12 +420,176 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[8]:</div>
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansired">---------------------------------------------------------------------------</span>
+<span class="ansired">gaierror</span>                                  Traceback (most recent call last)
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/packages/urllib3/connectionpool.py</span> in <span class="ansicyan">urlopen</span><span class="ansiblue">(self, method, url, body, headers, retries, redirect, assert_same_host, timeout, pool_timeout, release_conn, **response_kw)</span>
+<span class="ansigreen">    543</span>                                                   timeout<span class="ansiyellow">=</span>timeout_obj<span class="ansiyellow">,</span><span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 544</span><span class="ansiyellow">                                                   body=body, headers=headers)
+</span><span class="ansigreen">    545</span> <span class="ansiyellow"></span>
 
-<div class="output_html rendered_html output_subarea output_execute_result">
-<iframe id="igraph" scrolling="no" style="border:none;"seamless="seamless" src="https://plot.ly/~animos/50.embed" height="525" width="100%"></iframe>
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/packages/urllib3/connectionpool.py</span> in <span class="ansicyan">_make_request</span><span class="ansiblue">(self, conn, method, url, timeout, **httplib_request_kw)</span>
+<span class="ansigreen">    340</span>         <span class="ansigreen">try</span><span class="ansiyellow">:</span><span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 341</span><span class="ansiyellow">             </span>self<span class="ansiyellow">.</span>_validate_conn<span class="ansiyellow">(</span>conn<span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">    342</span>         <span class="ansigreen">except</span> <span class="ansiyellow">(</span>SocketTimeout<span class="ansiyellow">,</span> BaseSSLError<span class="ansiyellow">)</span> <span class="ansigreen">as</span> e<span class="ansiyellow">:</span><span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/packages/urllib3/connectionpool.py</span> in <span class="ansicyan">_validate_conn</span><span class="ansiblue">(self, conn)</span>
+<span class="ansigreen">    761</span>         <span class="ansigreen">if</span> <span class="ansigreen">not</span> getattr<span class="ansiyellow">(</span>conn<span class="ansiyellow">,</span> <span class="ansiblue">&apos;sock&apos;</span><span class="ansiyellow">,</span> <span class="ansigreen">None</span><span class="ansiyellow">)</span><span class="ansiyellow">:</span>  <span class="ansired"># AppEngine might not have  &#96;.sock&#96;</span><span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 762</span><span class="ansiyellow">             </span>conn<span class="ansiyellow">.</span>connect<span class="ansiyellow">(</span><span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">    763</span> <span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/packages/urllib3/connection.py</span> in <span class="ansicyan">connect</span><span class="ansiblue">(self)</span>
+<span class="ansigreen">    203</span>         <span class="ansired"># Add certificate verification</span><span class="ansiyellow"></span><span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 204</span><span class="ansiyellow">         </span>conn <span class="ansiyellow">=</span> self<span class="ansiyellow">.</span>_new_conn<span class="ansiyellow">(</span><span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">    205</span> <span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/packages/urllib3/connection.py</span> in <span class="ansicyan">_new_conn</span><span class="ansiblue">(self)</span>
+<span class="ansigreen">    133</span>             conn = connection.create_connection(
+<span class="ansigreen">--&gt; 134</span><span class="ansiyellow">                 (self.host, self.port), self.timeout, **extra_kw)
+</span><span class="ansigreen">    135</span> <span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/packages/urllib3/util/connection.py</span> in <span class="ansicyan">create_connection</span><span class="ansiblue">(address, timeout, source_address, socket_options)</span>
+<span class="ansigreen">     63</span>     err <span class="ansiyellow">=</span> <span class="ansigreen">None</span><span class="ansiyellow"></span>
+<span class="ansigreen">---&gt; 64</span><span class="ansiyellow">     </span><span class="ansigreen">for</span> res <span class="ansigreen">in</span> socket<span class="ansiyellow">.</span>getaddrinfo<span class="ansiyellow">(</span>host<span class="ansiyellow">,</span> port<span class="ansiyellow">,</span> <span class="ansicyan">0</span><span class="ansiyellow">,</span> socket<span class="ansiyellow">.</span>SOCK_STREAM<span class="ansiyellow">)</span><span class="ansiyellow">:</span><span class="ansiyellow"></span>
+<span class="ansigreen">     65</span>         af<span class="ansiyellow">,</span> socktype<span class="ansiyellow">,</span> proto<span class="ansiyellow">,</span> canonname<span class="ansiyellow">,</span> sa <span class="ansiyellow">=</span> res<span class="ansiyellow"></span>
+
+<span class="ansigreen">/usr/lib/python3.4/socket.py</span> in <span class="ansicyan">getaddrinfo</span><span class="ansiblue">(host, port, family, type, proto, flags)</span>
+<span class="ansigreen">    529</span>     addrlist <span class="ansiyellow">=</span> <span class="ansiyellow">[</span><span class="ansiyellow">]</span><span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 530</span><span class="ansiyellow">     </span><span class="ansigreen">for</span> res <span class="ansigreen">in</span> _socket<span class="ansiyellow">.</span>getaddrinfo<span class="ansiyellow">(</span>host<span class="ansiyellow">,</span> port<span class="ansiyellow">,</span> family<span class="ansiyellow">,</span> type<span class="ansiyellow">,</span> proto<span class="ansiyellow">,</span> flags<span class="ansiyellow">)</span><span class="ansiyellow">:</span><span class="ansiyellow"></span>
+<span class="ansigreen">    531</span>         af<span class="ansiyellow">,</span> socktype<span class="ansiyellow">,</span> proto<span class="ansiyellow">,</span> canonname<span class="ansiyellow">,</span> sa <span class="ansiyellow">=</span> res<span class="ansiyellow"></span>
+
+<span class="ansired">gaierror</span>: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+<span class="ansired">ProtocolError</span>                             Traceback (most recent call last)
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/adapters.py</span> in <span class="ansicyan">send</span><span class="ansiblue">(self, request, stream, timeout, verify, cert, proxies)</span>
+<span class="ansigreen">    369</span>                     retries<span class="ansiyellow">=</span>self<span class="ansiyellow">.</span>max_retries<span class="ansiyellow">,</span><span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 370</span><span class="ansiyellow">                     </span>timeout<span class="ansiyellow">=</span>timeout<span class="ansiyellow"></span>
+<span class="ansigreen">    371</span>                 )
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/packages/urllib3/connectionpool.py</span> in <span class="ansicyan">urlopen</span><span class="ansiblue">(self, method, url, body, headers, retries, redirect, assert_same_host, timeout, pool_timeout, release_conn, **response_kw)</span>
+<span class="ansigreen">    596</span>             retries = retries.increment(method, url, error=e, _pool=self,
+<span class="ansigreen">--&gt; 597</span><span class="ansiyellow">                                         _stacktrace=sys.exc_info()[2])
+</span><span class="ansigreen">    598</span>             retries<span class="ansiyellow">.</span>sleep<span class="ansiyellow">(</span><span class="ansiyellow">)</span><span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/packages/urllib3/util/retry.py</span> in <span class="ansicyan">increment</span><span class="ansiblue">(self, method, url, response, error, _pool, _stacktrace)</span>
+<span class="ansigreen">    244</span>             <span class="ansigreen">if</span> read <span class="ansigreen">is</span> <span class="ansigreen">False</span><span class="ansiyellow">:</span><span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 245</span><span class="ansiyellow">                 </span><span class="ansigreen">raise</span> six<span class="ansiyellow">.</span>reraise<span class="ansiyellow">(</span>type<span class="ansiyellow">(</span>error<span class="ansiyellow">)</span><span class="ansiyellow">,</span> error<span class="ansiyellow">,</span> _stacktrace<span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">    246</span>             <span class="ansigreen">elif</span> read <span class="ansigreen">is</span> <span class="ansigreen">not</span> <span class="ansigreen">None</span><span class="ansiyellow">:</span><span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/packages/urllib3/packages/six.py</span> in <span class="ansicyan">reraise</span><span class="ansiblue">(tp, value, tb)</span>
+<span class="ansigreen">    308</span>         <span class="ansigreen">if</span> value<span class="ansiyellow">.</span>__traceback__ <span class="ansigreen">is</span> <span class="ansigreen">not</span> tb<span class="ansiyellow">:</span><span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 309</span><span class="ansiyellow">             </span><span class="ansigreen">raise</span> value<span class="ansiyellow">.</span>with_traceback<span class="ansiyellow">(</span>tb<span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">    310</span>         <span class="ansigreen">raise</span> value<span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/packages/urllib3/connectionpool.py</span> in <span class="ansicyan">urlopen</span><span class="ansiblue">(self, method, url, body, headers, retries, redirect, assert_same_host, timeout, pool_timeout, release_conn, **response_kw)</span>
+<span class="ansigreen">    543</span>                                                   timeout<span class="ansiyellow">=</span>timeout_obj<span class="ansiyellow">,</span><span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 544</span><span class="ansiyellow">                                                   body=body, headers=headers)
+</span><span class="ansigreen">    545</span> <span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/packages/urllib3/connectionpool.py</span> in <span class="ansicyan">_make_request</span><span class="ansiblue">(self, conn, method, url, timeout, **httplib_request_kw)</span>
+<span class="ansigreen">    340</span>         <span class="ansigreen">try</span><span class="ansiyellow">:</span><span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 341</span><span class="ansiyellow">             </span>self<span class="ansiyellow">.</span>_validate_conn<span class="ansiyellow">(</span>conn<span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">    342</span>         <span class="ansigreen">except</span> <span class="ansiyellow">(</span>SocketTimeout<span class="ansiyellow">,</span> BaseSSLError<span class="ansiyellow">)</span> <span class="ansigreen">as</span> e<span class="ansiyellow">:</span><span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/packages/urllib3/connectionpool.py</span> in <span class="ansicyan">_validate_conn</span><span class="ansiblue">(self, conn)</span>
+<span class="ansigreen">    761</span>         <span class="ansigreen">if</span> <span class="ansigreen">not</span> getattr<span class="ansiyellow">(</span>conn<span class="ansiyellow">,</span> <span class="ansiblue">&apos;sock&apos;</span><span class="ansiyellow">,</span> <span class="ansigreen">None</span><span class="ansiyellow">)</span><span class="ansiyellow">:</span>  <span class="ansired"># AppEngine might not have  &#96;.sock&#96;</span><span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 762</span><span class="ansiyellow">             </span>conn<span class="ansiyellow">.</span>connect<span class="ansiyellow">(</span><span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">    763</span> <span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/packages/urllib3/connection.py</span> in <span class="ansicyan">connect</span><span class="ansiblue">(self)</span>
+<span class="ansigreen">    203</span>         <span class="ansired"># Add certificate verification</span><span class="ansiyellow"></span><span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 204</span><span class="ansiyellow">         </span>conn <span class="ansiyellow">=</span> self<span class="ansiyellow">.</span>_new_conn<span class="ansiyellow">(</span><span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">    205</span> <span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/packages/urllib3/connection.py</span> in <span class="ansicyan">_new_conn</span><span class="ansiblue">(self)</span>
+<span class="ansigreen">    133</span>             conn = connection.create_connection(
+<span class="ansigreen">--&gt; 134</span><span class="ansiyellow">                 (self.host, self.port), self.timeout, **extra_kw)
+</span><span class="ansigreen">    135</span> <span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/packages/urllib3/util/connection.py</span> in <span class="ansicyan">create_connection</span><span class="ansiblue">(address, timeout, source_address, socket_options)</span>
+<span class="ansigreen">     63</span>     err <span class="ansiyellow">=</span> <span class="ansigreen">None</span><span class="ansiyellow"></span>
+<span class="ansigreen">---&gt; 64</span><span class="ansiyellow">     </span><span class="ansigreen">for</span> res <span class="ansigreen">in</span> socket<span class="ansiyellow">.</span>getaddrinfo<span class="ansiyellow">(</span>host<span class="ansiyellow">,</span> port<span class="ansiyellow">,</span> <span class="ansicyan">0</span><span class="ansiyellow">,</span> socket<span class="ansiyellow">.</span>SOCK_STREAM<span class="ansiyellow">)</span><span class="ansiyellow">:</span><span class="ansiyellow"></span>
+<span class="ansigreen">     65</span>         af<span class="ansiyellow">,</span> socktype<span class="ansiyellow">,</span> proto<span class="ansiyellow">,</span> canonname<span class="ansiyellow">,</span> sa <span class="ansiyellow">=</span> res<span class="ansiyellow"></span>
+
+<span class="ansigreen">/usr/lib/python3.4/socket.py</span> in <span class="ansicyan">getaddrinfo</span><span class="ansiblue">(host, port, family, type, proto, flags)</span>
+<span class="ansigreen">    529</span>     addrlist <span class="ansiyellow">=</span> <span class="ansiyellow">[</span><span class="ansiyellow">]</span><span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 530</span><span class="ansiyellow">     </span><span class="ansigreen">for</span> res <span class="ansigreen">in</span> _socket<span class="ansiyellow">.</span>getaddrinfo<span class="ansiyellow">(</span>host<span class="ansiyellow">,</span> port<span class="ansiyellow">,</span> family<span class="ansiyellow">,</span> type<span class="ansiyellow">,</span> proto<span class="ansiyellow">,</span> flags<span class="ansiyellow">)</span><span class="ansiyellow">:</span><span class="ansiyellow"></span>
+<span class="ansigreen">    531</span>         af<span class="ansiyellow">,</span> socktype<span class="ansiyellow">,</span> proto<span class="ansiyellow">,</span> canonname<span class="ansiyellow">,</span> sa <span class="ansiyellow">=</span> res<span class="ansiyellow"></span>
+
+<span class="ansired">ProtocolError</span>: (&apos;Connection aborted.&apos;, gaierror(-2, &apos;Name or service not known&apos;))
+
+During handling of the above exception, another exception occurred:
+
+<span class="ansired">ConnectionError</span>                           Traceback (most recent call last)
+<span class="ansigreen">&lt;ipython-input-8-ee9ef9da0a66&gt;</span> in <span class="ansicyan">&lt;module&gt;</span><span class="ansiblue">()</span>
+<span class="ansigreen">      4</span> &apos;layout&apos;: {
+<span class="ansigreen">      5</span>         <span class="ansiblue">&apos;barmode&apos;</span><span class="ansiyellow">:</span> <span class="ansiblue">&apos;stack&apos;</span><span class="ansiyellow">,</span><span class="ansiyellow"></span>
+<span class="ansigreen">----&gt; 6</span><span class="ansiyellow">         </span><span class="ansiblue">&apos;title&apos;</span><span class="ansiyellow">:</span> title<span class="ansiyellow"></span>
+<span class="ansigreen">      7</span>     }
+<span class="ansigreen">      8</span> })
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/plotly/plotly/plotly.py</span> in <span class="ansicyan">iplot</span><span class="ansiblue">(figure_or_data, **plot_options)</span>
+<span class="ansigreen">    137</span>     <span class="ansigreen">if</span> <span class="ansiblue">&apos;auto_open&apos;</span> <span class="ansigreen">not</span> <span class="ansigreen">in</span> plot_options<span class="ansiyellow">:</span><span class="ansiyellow"></span>
+<span class="ansigreen">    138</span>         plot_options<span class="ansiyellow">[</span><span class="ansiblue">&apos;auto_open&apos;</span><span class="ansiyellow">]</span> <span class="ansiyellow">=</span> <span class="ansigreen">False</span><span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 139</span><span class="ansiyellow">     </span>res <span class="ansiyellow">=</span> plot<span class="ansiyellow">(</span>figure_or_data<span class="ansiyellow">,</span> <span class="ansiyellow">**</span>plot_options<span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">    140</span>     urlsplit <span class="ansiyellow">=</span> res<span class="ansiyellow">.</span>split<span class="ansiyellow">(</span><span class="ansiblue">&apos;/&apos;</span><span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">    141</span>     username<span class="ansiyellow">,</span> plot_id <span class="ansiyellow">=</span> urlsplit<span class="ansiyellow">[</span><span class="ansiyellow">-</span><span class="ansicyan">2</span><span class="ansiyellow">]</span><span class="ansiyellow">[</span><span class="ansicyan">1</span><span class="ansiyellow">:</span><span class="ansiyellow">]</span><span class="ansiyellow">,</span> urlsplit<span class="ansiyellow">[</span><span class="ansiyellow">-</span><span class="ansicyan">1</span><span class="ansiyellow">]</span>  <span class="ansired"># TODO: HACKY!</span><span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/plotly/plotly/plotly.py</span> in <span class="ansicyan">plot</span><span class="ansiblue">(figure_or_data, validate, **plot_options)</span>
+<span class="ansigreen">    189</span>                 <span class="ansigreen">pass</span><span class="ansiyellow"></span>
+<span class="ansigreen">    190</span>     plot_options <span class="ansiyellow">=</span> _plot_option_logic<span class="ansiyellow">(</span>plot_options<span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 191</span><span class="ansiyellow">     </span>res <span class="ansiyellow">=</span> _send_to_plotly<span class="ansiyellow">(</span>figure<span class="ansiyellow">,</span> <span class="ansiyellow">**</span>plot_options<span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">    192</span>     <span class="ansigreen">if</span> res<span class="ansiyellow">[</span><span class="ansiblue">&apos;error&apos;</span><span class="ansiyellow">]</span> <span class="ansiyellow">==</span> <span class="ansiblue">&apos;&apos;</span><span class="ansiyellow">:</span><span class="ansiyellow"></span>
+<span class="ansigreen">    193</span>         <span class="ansigreen">if</span> plot_options<span class="ansiyellow">[</span><span class="ansiblue">&apos;auto_open&apos;</span><span class="ansiyellow">]</span><span class="ansiyellow">:</span><span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/plotly/plotly/plotly.py</span> in <span class="ansicyan">_send_to_plotly</span><span class="ansiblue">(figure, **plot_options)</span>
+<span class="ansigreen">   1253</span> <span class="ansiyellow"></span>
+<span class="ansigreen">   1254</span>     r = requests.post(url, data=payload,
+<span class="ansigreen">-&gt; 1255</span><span class="ansiyellow">                       verify=get_config()[&apos;plotly_ssl_verification&apos;])
+</span><span class="ansigreen">   1256</span>     r<span class="ansiyellow">.</span>raise_for_status<span class="ansiyellow">(</span><span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">   1257</span>     r <span class="ansiyellow">=</span> json<span class="ansiyellow">.</span>loads<span class="ansiyellow">(</span>r<span class="ansiyellow">.</span>text<span class="ansiyellow">)</span><span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/api.py</span> in <span class="ansicyan">post</span><span class="ansiblue">(url, data, json, **kwargs)</span>
+<span class="ansigreen">    106</span>     &quot;&quot;&quot;
+<span class="ansigreen">    107</span> <span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 108</span><span class="ansiyellow">     </span><span class="ansigreen">return</span> request<span class="ansiyellow">(</span><span class="ansiblue">&apos;post&apos;</span><span class="ansiyellow">,</span> url<span class="ansiyellow">,</span> data<span class="ansiyellow">=</span>data<span class="ansiyellow">,</span> json<span class="ansiyellow">=</span>json<span class="ansiyellow">,</span> <span class="ansiyellow">**</span>kwargs<span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">    109</span> <span class="ansiyellow"></span>
+<span class="ansigreen">    110</span> <span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/api.py</span> in <span class="ansicyan">request</span><span class="ansiblue">(method, url, **kwargs)</span>
+<span class="ansigreen">     48</span> <span class="ansiyellow"></span>
+<span class="ansigreen">     49</span>     session <span class="ansiyellow">=</span> sessions<span class="ansiyellow">.</span>Session<span class="ansiyellow">(</span><span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">---&gt; 50</span><span class="ansiyellow">     </span>response <span class="ansiyellow">=</span> session<span class="ansiyellow">.</span>request<span class="ansiyellow">(</span>method<span class="ansiyellow">=</span>method<span class="ansiyellow">,</span> url<span class="ansiyellow">=</span>url<span class="ansiyellow">,</span> <span class="ansiyellow">**</span>kwargs<span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">     51</span>     <span class="ansired"># By explicitly closing the session, we avoid leaving sockets open which</span><span class="ansiyellow"></span><span class="ansiyellow"></span>
+<span class="ansigreen">     52</span>     <span class="ansired"># can trigger a ResourceWarning in some cases, and look like a memory leak</span><span class="ansiyellow"></span><span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/sessions.py</span> in <span class="ansicyan">request</span><span class="ansiblue">(self, method, url, params, data, headers, cookies, files, auth, timeout, allow_redirects, proxies, hooks, stream, verify, cert, json)</span>
+<span class="ansigreen">    462</span>         }
+<span class="ansigreen">    463</span>         send_kwargs<span class="ansiyellow">.</span>update<span class="ansiyellow">(</span>settings<span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 464</span><span class="ansiyellow">         </span>resp <span class="ansiyellow">=</span> self<span class="ansiyellow">.</span>send<span class="ansiyellow">(</span>prep<span class="ansiyellow">,</span> <span class="ansiyellow">**</span>send_kwargs<span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">    465</span> <span class="ansiyellow"></span>
+<span class="ansigreen">    466</span>         <span class="ansigreen">return</span> resp<span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/sessions.py</span> in <span class="ansicyan">send</span><span class="ansiblue">(self, request, **kwargs)</span>
+<span class="ansigreen">    574</span> <span class="ansiyellow"></span>
+<span class="ansigreen">    575</span>         <span class="ansired"># Send the request</span><span class="ansiyellow"></span><span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 576</span><span class="ansiyellow">         </span>r <span class="ansiyellow">=</span> adapter<span class="ansiyellow">.</span>send<span class="ansiyellow">(</span>request<span class="ansiyellow">,</span> <span class="ansiyellow">**</span>kwargs<span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">    577</span> <span class="ansiyellow"></span>
+<span class="ansigreen">    578</span>         <span class="ansired"># Total elapsed time of the request (approximately)</span><span class="ansiyellow"></span><span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/adapters.py</span> in <span class="ansicyan">send</span><span class="ansiblue">(self, request, stream, timeout, verify, cert, proxies)</span>
+<span class="ansigreen">    413</span> <span class="ansiyellow"></span>
+<span class="ansigreen">    414</span>         <span class="ansigreen">except</span> <span class="ansiyellow">(</span>ProtocolError<span class="ansiyellow">,</span> socket<span class="ansiyellow">.</span>error<span class="ansiyellow">)</span> <span class="ansigreen">as</span> err<span class="ansiyellow">:</span><span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 415</span><span class="ansiyellow">             </span><span class="ansigreen">raise</span> ConnectionError<span class="ansiyellow">(</span>err<span class="ansiyellow">,</span> request<span class="ansiyellow">=</span>request<span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">    416</span> <span class="ansiyellow"></span>
+<span class="ansigreen">    417</span>         <span class="ansigreen">except</span> MaxRetryError <span class="ansigreen">as</span> e<span class="ansiyellow">:</span><span class="ansiyellow"></span>
+
+<span class="ansired">ConnectionError</span>: (&apos;Connection aborted.&apos;, gaierror(-2, &apos;Name or service not known&apos;))</pre>
 </div>
-
 </div>
 
 </div>
@@ -455,12 +619,176 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[9]:</div>
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansired">---------------------------------------------------------------------------</span>
+<span class="ansired">gaierror</span>                                  Traceback (most recent call last)
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/packages/urllib3/connectionpool.py</span> in <span class="ansicyan">urlopen</span><span class="ansiblue">(self, method, url, body, headers, retries, redirect, assert_same_host, timeout, pool_timeout, release_conn, **response_kw)</span>
+<span class="ansigreen">    543</span>                                                   timeout<span class="ansiyellow">=</span>timeout_obj<span class="ansiyellow">,</span><span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 544</span><span class="ansiyellow">                                                   body=body, headers=headers)
+</span><span class="ansigreen">    545</span> <span class="ansiyellow"></span>
 
-<div class="output_html rendered_html output_subarea output_execute_result">
-<iframe id="igraph" scrolling="no" style="border:none;"seamless="seamless" src="https://plot.ly/~animos/51.embed" height="525" width="100%"></iframe>
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/packages/urllib3/connectionpool.py</span> in <span class="ansicyan">_make_request</span><span class="ansiblue">(self, conn, method, url, timeout, **httplib_request_kw)</span>
+<span class="ansigreen">    340</span>         <span class="ansigreen">try</span><span class="ansiyellow">:</span><span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 341</span><span class="ansiyellow">             </span>self<span class="ansiyellow">.</span>_validate_conn<span class="ansiyellow">(</span>conn<span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">    342</span>         <span class="ansigreen">except</span> <span class="ansiyellow">(</span>SocketTimeout<span class="ansiyellow">,</span> BaseSSLError<span class="ansiyellow">)</span> <span class="ansigreen">as</span> e<span class="ansiyellow">:</span><span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/packages/urllib3/connectionpool.py</span> in <span class="ansicyan">_validate_conn</span><span class="ansiblue">(self, conn)</span>
+<span class="ansigreen">    761</span>         <span class="ansigreen">if</span> <span class="ansigreen">not</span> getattr<span class="ansiyellow">(</span>conn<span class="ansiyellow">,</span> <span class="ansiblue">&apos;sock&apos;</span><span class="ansiyellow">,</span> <span class="ansigreen">None</span><span class="ansiyellow">)</span><span class="ansiyellow">:</span>  <span class="ansired"># AppEngine might not have  &#96;.sock&#96;</span><span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 762</span><span class="ansiyellow">             </span>conn<span class="ansiyellow">.</span>connect<span class="ansiyellow">(</span><span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">    763</span> <span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/packages/urllib3/connection.py</span> in <span class="ansicyan">connect</span><span class="ansiblue">(self)</span>
+<span class="ansigreen">    203</span>         <span class="ansired"># Add certificate verification</span><span class="ansiyellow"></span><span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 204</span><span class="ansiyellow">         </span>conn <span class="ansiyellow">=</span> self<span class="ansiyellow">.</span>_new_conn<span class="ansiyellow">(</span><span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">    205</span> <span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/packages/urllib3/connection.py</span> in <span class="ansicyan">_new_conn</span><span class="ansiblue">(self)</span>
+<span class="ansigreen">    133</span>             conn = connection.create_connection(
+<span class="ansigreen">--&gt; 134</span><span class="ansiyellow">                 (self.host, self.port), self.timeout, **extra_kw)
+</span><span class="ansigreen">    135</span> <span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/packages/urllib3/util/connection.py</span> in <span class="ansicyan">create_connection</span><span class="ansiblue">(address, timeout, source_address, socket_options)</span>
+<span class="ansigreen">     63</span>     err <span class="ansiyellow">=</span> <span class="ansigreen">None</span><span class="ansiyellow"></span>
+<span class="ansigreen">---&gt; 64</span><span class="ansiyellow">     </span><span class="ansigreen">for</span> res <span class="ansigreen">in</span> socket<span class="ansiyellow">.</span>getaddrinfo<span class="ansiyellow">(</span>host<span class="ansiyellow">,</span> port<span class="ansiyellow">,</span> <span class="ansicyan">0</span><span class="ansiyellow">,</span> socket<span class="ansiyellow">.</span>SOCK_STREAM<span class="ansiyellow">)</span><span class="ansiyellow">:</span><span class="ansiyellow"></span>
+<span class="ansigreen">     65</span>         af<span class="ansiyellow">,</span> socktype<span class="ansiyellow">,</span> proto<span class="ansiyellow">,</span> canonname<span class="ansiyellow">,</span> sa <span class="ansiyellow">=</span> res<span class="ansiyellow"></span>
+
+<span class="ansigreen">/usr/lib/python3.4/socket.py</span> in <span class="ansicyan">getaddrinfo</span><span class="ansiblue">(host, port, family, type, proto, flags)</span>
+<span class="ansigreen">    529</span>     addrlist <span class="ansiyellow">=</span> <span class="ansiyellow">[</span><span class="ansiyellow">]</span><span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 530</span><span class="ansiyellow">     </span><span class="ansigreen">for</span> res <span class="ansigreen">in</span> _socket<span class="ansiyellow">.</span>getaddrinfo<span class="ansiyellow">(</span>host<span class="ansiyellow">,</span> port<span class="ansiyellow">,</span> family<span class="ansiyellow">,</span> type<span class="ansiyellow">,</span> proto<span class="ansiyellow">,</span> flags<span class="ansiyellow">)</span><span class="ansiyellow">:</span><span class="ansiyellow"></span>
+<span class="ansigreen">    531</span>         af<span class="ansiyellow">,</span> socktype<span class="ansiyellow">,</span> proto<span class="ansiyellow">,</span> canonname<span class="ansiyellow">,</span> sa <span class="ansiyellow">=</span> res<span class="ansiyellow"></span>
+
+<span class="ansired">gaierror</span>: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+<span class="ansired">ProtocolError</span>                             Traceback (most recent call last)
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/adapters.py</span> in <span class="ansicyan">send</span><span class="ansiblue">(self, request, stream, timeout, verify, cert, proxies)</span>
+<span class="ansigreen">    369</span>                     retries<span class="ansiyellow">=</span>self<span class="ansiyellow">.</span>max_retries<span class="ansiyellow">,</span><span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 370</span><span class="ansiyellow">                     </span>timeout<span class="ansiyellow">=</span>timeout<span class="ansiyellow"></span>
+<span class="ansigreen">    371</span>                 )
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/packages/urllib3/connectionpool.py</span> in <span class="ansicyan">urlopen</span><span class="ansiblue">(self, method, url, body, headers, retries, redirect, assert_same_host, timeout, pool_timeout, release_conn, **response_kw)</span>
+<span class="ansigreen">    596</span>             retries = retries.increment(method, url, error=e, _pool=self,
+<span class="ansigreen">--&gt; 597</span><span class="ansiyellow">                                         _stacktrace=sys.exc_info()[2])
+</span><span class="ansigreen">    598</span>             retries<span class="ansiyellow">.</span>sleep<span class="ansiyellow">(</span><span class="ansiyellow">)</span><span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/packages/urllib3/util/retry.py</span> in <span class="ansicyan">increment</span><span class="ansiblue">(self, method, url, response, error, _pool, _stacktrace)</span>
+<span class="ansigreen">    244</span>             <span class="ansigreen">if</span> read <span class="ansigreen">is</span> <span class="ansigreen">False</span><span class="ansiyellow">:</span><span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 245</span><span class="ansiyellow">                 </span><span class="ansigreen">raise</span> six<span class="ansiyellow">.</span>reraise<span class="ansiyellow">(</span>type<span class="ansiyellow">(</span>error<span class="ansiyellow">)</span><span class="ansiyellow">,</span> error<span class="ansiyellow">,</span> _stacktrace<span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">    246</span>             <span class="ansigreen">elif</span> read <span class="ansigreen">is</span> <span class="ansigreen">not</span> <span class="ansigreen">None</span><span class="ansiyellow">:</span><span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/packages/urllib3/packages/six.py</span> in <span class="ansicyan">reraise</span><span class="ansiblue">(tp, value, tb)</span>
+<span class="ansigreen">    308</span>         <span class="ansigreen">if</span> value<span class="ansiyellow">.</span>__traceback__ <span class="ansigreen">is</span> <span class="ansigreen">not</span> tb<span class="ansiyellow">:</span><span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 309</span><span class="ansiyellow">             </span><span class="ansigreen">raise</span> value<span class="ansiyellow">.</span>with_traceback<span class="ansiyellow">(</span>tb<span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">    310</span>         <span class="ansigreen">raise</span> value<span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/packages/urllib3/connectionpool.py</span> in <span class="ansicyan">urlopen</span><span class="ansiblue">(self, method, url, body, headers, retries, redirect, assert_same_host, timeout, pool_timeout, release_conn, **response_kw)</span>
+<span class="ansigreen">    543</span>                                                   timeout<span class="ansiyellow">=</span>timeout_obj<span class="ansiyellow">,</span><span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 544</span><span class="ansiyellow">                                                   body=body, headers=headers)
+</span><span class="ansigreen">    545</span> <span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/packages/urllib3/connectionpool.py</span> in <span class="ansicyan">_make_request</span><span class="ansiblue">(self, conn, method, url, timeout, **httplib_request_kw)</span>
+<span class="ansigreen">    340</span>         <span class="ansigreen">try</span><span class="ansiyellow">:</span><span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 341</span><span class="ansiyellow">             </span>self<span class="ansiyellow">.</span>_validate_conn<span class="ansiyellow">(</span>conn<span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">    342</span>         <span class="ansigreen">except</span> <span class="ansiyellow">(</span>SocketTimeout<span class="ansiyellow">,</span> BaseSSLError<span class="ansiyellow">)</span> <span class="ansigreen">as</span> e<span class="ansiyellow">:</span><span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/packages/urllib3/connectionpool.py</span> in <span class="ansicyan">_validate_conn</span><span class="ansiblue">(self, conn)</span>
+<span class="ansigreen">    761</span>         <span class="ansigreen">if</span> <span class="ansigreen">not</span> getattr<span class="ansiyellow">(</span>conn<span class="ansiyellow">,</span> <span class="ansiblue">&apos;sock&apos;</span><span class="ansiyellow">,</span> <span class="ansigreen">None</span><span class="ansiyellow">)</span><span class="ansiyellow">:</span>  <span class="ansired"># AppEngine might not have  &#96;.sock&#96;</span><span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 762</span><span class="ansiyellow">             </span>conn<span class="ansiyellow">.</span>connect<span class="ansiyellow">(</span><span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">    763</span> <span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/packages/urllib3/connection.py</span> in <span class="ansicyan">connect</span><span class="ansiblue">(self)</span>
+<span class="ansigreen">    203</span>         <span class="ansired"># Add certificate verification</span><span class="ansiyellow"></span><span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 204</span><span class="ansiyellow">         </span>conn <span class="ansiyellow">=</span> self<span class="ansiyellow">.</span>_new_conn<span class="ansiyellow">(</span><span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">    205</span> <span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/packages/urllib3/connection.py</span> in <span class="ansicyan">_new_conn</span><span class="ansiblue">(self)</span>
+<span class="ansigreen">    133</span>             conn = connection.create_connection(
+<span class="ansigreen">--&gt; 134</span><span class="ansiyellow">                 (self.host, self.port), self.timeout, **extra_kw)
+</span><span class="ansigreen">    135</span> <span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/packages/urllib3/util/connection.py</span> in <span class="ansicyan">create_connection</span><span class="ansiblue">(address, timeout, source_address, socket_options)</span>
+<span class="ansigreen">     63</span>     err <span class="ansiyellow">=</span> <span class="ansigreen">None</span><span class="ansiyellow"></span>
+<span class="ansigreen">---&gt; 64</span><span class="ansiyellow">     </span><span class="ansigreen">for</span> res <span class="ansigreen">in</span> socket<span class="ansiyellow">.</span>getaddrinfo<span class="ansiyellow">(</span>host<span class="ansiyellow">,</span> port<span class="ansiyellow">,</span> <span class="ansicyan">0</span><span class="ansiyellow">,</span> socket<span class="ansiyellow">.</span>SOCK_STREAM<span class="ansiyellow">)</span><span class="ansiyellow">:</span><span class="ansiyellow"></span>
+<span class="ansigreen">     65</span>         af<span class="ansiyellow">,</span> socktype<span class="ansiyellow">,</span> proto<span class="ansiyellow">,</span> canonname<span class="ansiyellow">,</span> sa <span class="ansiyellow">=</span> res<span class="ansiyellow"></span>
+
+<span class="ansigreen">/usr/lib/python3.4/socket.py</span> in <span class="ansicyan">getaddrinfo</span><span class="ansiblue">(host, port, family, type, proto, flags)</span>
+<span class="ansigreen">    529</span>     addrlist <span class="ansiyellow">=</span> <span class="ansiyellow">[</span><span class="ansiyellow">]</span><span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 530</span><span class="ansiyellow">     </span><span class="ansigreen">for</span> res <span class="ansigreen">in</span> _socket<span class="ansiyellow">.</span>getaddrinfo<span class="ansiyellow">(</span>host<span class="ansiyellow">,</span> port<span class="ansiyellow">,</span> family<span class="ansiyellow">,</span> type<span class="ansiyellow">,</span> proto<span class="ansiyellow">,</span> flags<span class="ansiyellow">)</span><span class="ansiyellow">:</span><span class="ansiyellow"></span>
+<span class="ansigreen">    531</span>         af<span class="ansiyellow">,</span> socktype<span class="ansiyellow">,</span> proto<span class="ansiyellow">,</span> canonname<span class="ansiyellow">,</span> sa <span class="ansiyellow">=</span> res<span class="ansiyellow"></span>
+
+<span class="ansired">ProtocolError</span>: (&apos;Connection aborted.&apos;, gaierror(-2, &apos;Name or service not known&apos;))
+
+During handling of the above exception, another exception occurred:
+
+<span class="ansired">ConnectionError</span>                           Traceback (most recent call last)
+<span class="ansigreen">&lt;ipython-input-9-a69b3f9af9ef&gt;</span> in <span class="ansicyan">&lt;module&gt;</span><span class="ansiblue">()</span>
+<span class="ansigreen">      4</span> &apos;layout&apos;: {
+<span class="ansigreen">      5</span>         <span class="ansiblue">&apos;barmode&apos;</span><span class="ansiyellow">:</span> <span class="ansiblue">&apos;stack&apos;</span><span class="ansiyellow">,</span><span class="ansiyellow"></span>
+<span class="ansigreen">----&gt; 6</span><span class="ansiyellow">         </span><span class="ansiblue">&apos;title&apos;</span><span class="ansiyellow">:</span> title<span class="ansiyellow"></span>
+<span class="ansigreen">      7</span>     }
+<span class="ansigreen">      8</span> })
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/plotly/plotly/plotly.py</span> in <span class="ansicyan">iplot</span><span class="ansiblue">(figure_or_data, **plot_options)</span>
+<span class="ansigreen">    137</span>     <span class="ansigreen">if</span> <span class="ansiblue">&apos;auto_open&apos;</span> <span class="ansigreen">not</span> <span class="ansigreen">in</span> plot_options<span class="ansiyellow">:</span><span class="ansiyellow"></span>
+<span class="ansigreen">    138</span>         plot_options<span class="ansiyellow">[</span><span class="ansiblue">&apos;auto_open&apos;</span><span class="ansiyellow">]</span> <span class="ansiyellow">=</span> <span class="ansigreen">False</span><span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 139</span><span class="ansiyellow">     </span>res <span class="ansiyellow">=</span> plot<span class="ansiyellow">(</span>figure_or_data<span class="ansiyellow">,</span> <span class="ansiyellow">**</span>plot_options<span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">    140</span>     urlsplit <span class="ansiyellow">=</span> res<span class="ansiyellow">.</span>split<span class="ansiyellow">(</span><span class="ansiblue">&apos;/&apos;</span><span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">    141</span>     username<span class="ansiyellow">,</span> plot_id <span class="ansiyellow">=</span> urlsplit<span class="ansiyellow">[</span><span class="ansiyellow">-</span><span class="ansicyan">2</span><span class="ansiyellow">]</span><span class="ansiyellow">[</span><span class="ansicyan">1</span><span class="ansiyellow">:</span><span class="ansiyellow">]</span><span class="ansiyellow">,</span> urlsplit<span class="ansiyellow">[</span><span class="ansiyellow">-</span><span class="ansicyan">1</span><span class="ansiyellow">]</span>  <span class="ansired"># TODO: HACKY!</span><span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/plotly/plotly/plotly.py</span> in <span class="ansicyan">plot</span><span class="ansiblue">(figure_or_data, validate, **plot_options)</span>
+<span class="ansigreen">    189</span>                 <span class="ansigreen">pass</span><span class="ansiyellow"></span>
+<span class="ansigreen">    190</span>     plot_options <span class="ansiyellow">=</span> _plot_option_logic<span class="ansiyellow">(</span>plot_options<span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 191</span><span class="ansiyellow">     </span>res <span class="ansiyellow">=</span> _send_to_plotly<span class="ansiyellow">(</span>figure<span class="ansiyellow">,</span> <span class="ansiyellow">**</span>plot_options<span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">    192</span>     <span class="ansigreen">if</span> res<span class="ansiyellow">[</span><span class="ansiblue">&apos;error&apos;</span><span class="ansiyellow">]</span> <span class="ansiyellow">==</span> <span class="ansiblue">&apos;&apos;</span><span class="ansiyellow">:</span><span class="ansiyellow"></span>
+<span class="ansigreen">    193</span>         <span class="ansigreen">if</span> plot_options<span class="ansiyellow">[</span><span class="ansiblue">&apos;auto_open&apos;</span><span class="ansiyellow">]</span><span class="ansiyellow">:</span><span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/plotly/plotly/plotly.py</span> in <span class="ansicyan">_send_to_plotly</span><span class="ansiblue">(figure, **plot_options)</span>
+<span class="ansigreen">   1253</span> <span class="ansiyellow"></span>
+<span class="ansigreen">   1254</span>     r = requests.post(url, data=payload,
+<span class="ansigreen">-&gt; 1255</span><span class="ansiyellow">                       verify=get_config()[&apos;plotly_ssl_verification&apos;])
+</span><span class="ansigreen">   1256</span>     r<span class="ansiyellow">.</span>raise_for_status<span class="ansiyellow">(</span><span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">   1257</span>     r <span class="ansiyellow">=</span> json<span class="ansiyellow">.</span>loads<span class="ansiyellow">(</span>r<span class="ansiyellow">.</span>text<span class="ansiyellow">)</span><span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/api.py</span> in <span class="ansicyan">post</span><span class="ansiblue">(url, data, json, **kwargs)</span>
+<span class="ansigreen">    106</span>     &quot;&quot;&quot;
+<span class="ansigreen">    107</span> <span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 108</span><span class="ansiyellow">     </span><span class="ansigreen">return</span> request<span class="ansiyellow">(</span><span class="ansiblue">&apos;post&apos;</span><span class="ansiyellow">,</span> url<span class="ansiyellow">,</span> data<span class="ansiyellow">=</span>data<span class="ansiyellow">,</span> json<span class="ansiyellow">=</span>json<span class="ansiyellow">,</span> <span class="ansiyellow">**</span>kwargs<span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">    109</span> <span class="ansiyellow"></span>
+<span class="ansigreen">    110</span> <span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/api.py</span> in <span class="ansicyan">request</span><span class="ansiblue">(method, url, **kwargs)</span>
+<span class="ansigreen">     48</span> <span class="ansiyellow"></span>
+<span class="ansigreen">     49</span>     session <span class="ansiyellow">=</span> sessions<span class="ansiyellow">.</span>Session<span class="ansiyellow">(</span><span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">---&gt; 50</span><span class="ansiyellow">     </span>response <span class="ansiyellow">=</span> session<span class="ansiyellow">.</span>request<span class="ansiyellow">(</span>method<span class="ansiyellow">=</span>method<span class="ansiyellow">,</span> url<span class="ansiyellow">=</span>url<span class="ansiyellow">,</span> <span class="ansiyellow">**</span>kwargs<span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">     51</span>     <span class="ansired"># By explicitly closing the session, we avoid leaving sockets open which</span><span class="ansiyellow"></span><span class="ansiyellow"></span>
+<span class="ansigreen">     52</span>     <span class="ansired"># can trigger a ResourceWarning in some cases, and look like a memory leak</span><span class="ansiyellow"></span><span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/sessions.py</span> in <span class="ansicyan">request</span><span class="ansiblue">(self, method, url, params, data, headers, cookies, files, auth, timeout, allow_redirects, proxies, hooks, stream, verify, cert, json)</span>
+<span class="ansigreen">    462</span>         }
+<span class="ansigreen">    463</span>         send_kwargs<span class="ansiyellow">.</span>update<span class="ansiyellow">(</span>settings<span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 464</span><span class="ansiyellow">         </span>resp <span class="ansiyellow">=</span> self<span class="ansiyellow">.</span>send<span class="ansiyellow">(</span>prep<span class="ansiyellow">,</span> <span class="ansiyellow">**</span>send_kwargs<span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">    465</span> <span class="ansiyellow"></span>
+<span class="ansigreen">    466</span>         <span class="ansigreen">return</span> resp<span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/sessions.py</span> in <span class="ansicyan">send</span><span class="ansiblue">(self, request, **kwargs)</span>
+<span class="ansigreen">    574</span> <span class="ansiyellow"></span>
+<span class="ansigreen">    575</span>         <span class="ansired"># Send the request</span><span class="ansiyellow"></span><span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 576</span><span class="ansiyellow">         </span>r <span class="ansiyellow">=</span> adapter<span class="ansiyellow">.</span>send<span class="ansiyellow">(</span>request<span class="ansiyellow">,</span> <span class="ansiyellow">**</span>kwargs<span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">    577</span> <span class="ansiyellow"></span>
+<span class="ansigreen">    578</span>         <span class="ansired"># Total elapsed time of the request (approximately)</span><span class="ansiyellow"></span><span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/adapters.py</span> in <span class="ansicyan">send</span><span class="ansiblue">(self, request, stream, timeout, verify, cert, proxies)</span>
+<span class="ansigreen">    413</span> <span class="ansiyellow"></span>
+<span class="ansigreen">    414</span>         <span class="ansigreen">except</span> <span class="ansiyellow">(</span>ProtocolError<span class="ansiyellow">,</span> socket<span class="ansiyellow">.</span>error<span class="ansiyellow">)</span> <span class="ansigreen">as</span> err<span class="ansiyellow">:</span><span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 415</span><span class="ansiyellow">             </span><span class="ansigreen">raise</span> ConnectionError<span class="ansiyellow">(</span>err<span class="ansiyellow">,</span> request<span class="ansiyellow">=</span>request<span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">    416</span> <span class="ansiyellow"></span>
+<span class="ansigreen">    417</span>         <span class="ansigreen">except</span> MaxRetryError <span class="ansigreen">as</span> e<span class="ansiyellow">:</span><span class="ansiyellow"></span>
+
+<span class="ansired">ConnectionError</span>: (&apos;Connection aborted.&apos;, gaierror(-2, &apos;Name or service not known&apos;))</pre>
 </div>
-
 </div>
 
 </div>
@@ -490,12 +818,176 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[10]:</div>
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansired">---------------------------------------------------------------------------</span>
+<span class="ansired">gaierror</span>                                  Traceback (most recent call last)
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/packages/urllib3/connectionpool.py</span> in <span class="ansicyan">urlopen</span><span class="ansiblue">(self, method, url, body, headers, retries, redirect, assert_same_host, timeout, pool_timeout, release_conn, **response_kw)</span>
+<span class="ansigreen">    543</span>                                                   timeout<span class="ansiyellow">=</span>timeout_obj<span class="ansiyellow">,</span><span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 544</span><span class="ansiyellow">                                                   body=body, headers=headers)
+</span><span class="ansigreen">    545</span> <span class="ansiyellow"></span>
 
-<div class="output_html rendered_html output_subarea output_execute_result">
-<iframe id="igraph" scrolling="no" style="border:none;"seamless="seamless" src="https://plot.ly/~animos/52.embed" height="525" width="100%"></iframe>
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/packages/urllib3/connectionpool.py</span> in <span class="ansicyan">_make_request</span><span class="ansiblue">(self, conn, method, url, timeout, **httplib_request_kw)</span>
+<span class="ansigreen">    340</span>         <span class="ansigreen">try</span><span class="ansiyellow">:</span><span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 341</span><span class="ansiyellow">             </span>self<span class="ansiyellow">.</span>_validate_conn<span class="ansiyellow">(</span>conn<span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">    342</span>         <span class="ansigreen">except</span> <span class="ansiyellow">(</span>SocketTimeout<span class="ansiyellow">,</span> BaseSSLError<span class="ansiyellow">)</span> <span class="ansigreen">as</span> e<span class="ansiyellow">:</span><span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/packages/urllib3/connectionpool.py</span> in <span class="ansicyan">_validate_conn</span><span class="ansiblue">(self, conn)</span>
+<span class="ansigreen">    761</span>         <span class="ansigreen">if</span> <span class="ansigreen">not</span> getattr<span class="ansiyellow">(</span>conn<span class="ansiyellow">,</span> <span class="ansiblue">&apos;sock&apos;</span><span class="ansiyellow">,</span> <span class="ansigreen">None</span><span class="ansiyellow">)</span><span class="ansiyellow">:</span>  <span class="ansired"># AppEngine might not have  &#96;.sock&#96;</span><span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 762</span><span class="ansiyellow">             </span>conn<span class="ansiyellow">.</span>connect<span class="ansiyellow">(</span><span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">    763</span> <span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/packages/urllib3/connection.py</span> in <span class="ansicyan">connect</span><span class="ansiblue">(self)</span>
+<span class="ansigreen">    203</span>         <span class="ansired"># Add certificate verification</span><span class="ansiyellow"></span><span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 204</span><span class="ansiyellow">         </span>conn <span class="ansiyellow">=</span> self<span class="ansiyellow">.</span>_new_conn<span class="ansiyellow">(</span><span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">    205</span> <span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/packages/urllib3/connection.py</span> in <span class="ansicyan">_new_conn</span><span class="ansiblue">(self)</span>
+<span class="ansigreen">    133</span>             conn = connection.create_connection(
+<span class="ansigreen">--&gt; 134</span><span class="ansiyellow">                 (self.host, self.port), self.timeout, **extra_kw)
+</span><span class="ansigreen">    135</span> <span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/packages/urllib3/util/connection.py</span> in <span class="ansicyan">create_connection</span><span class="ansiblue">(address, timeout, source_address, socket_options)</span>
+<span class="ansigreen">     63</span>     err <span class="ansiyellow">=</span> <span class="ansigreen">None</span><span class="ansiyellow"></span>
+<span class="ansigreen">---&gt; 64</span><span class="ansiyellow">     </span><span class="ansigreen">for</span> res <span class="ansigreen">in</span> socket<span class="ansiyellow">.</span>getaddrinfo<span class="ansiyellow">(</span>host<span class="ansiyellow">,</span> port<span class="ansiyellow">,</span> <span class="ansicyan">0</span><span class="ansiyellow">,</span> socket<span class="ansiyellow">.</span>SOCK_STREAM<span class="ansiyellow">)</span><span class="ansiyellow">:</span><span class="ansiyellow"></span>
+<span class="ansigreen">     65</span>         af<span class="ansiyellow">,</span> socktype<span class="ansiyellow">,</span> proto<span class="ansiyellow">,</span> canonname<span class="ansiyellow">,</span> sa <span class="ansiyellow">=</span> res<span class="ansiyellow"></span>
+
+<span class="ansigreen">/usr/lib/python3.4/socket.py</span> in <span class="ansicyan">getaddrinfo</span><span class="ansiblue">(host, port, family, type, proto, flags)</span>
+<span class="ansigreen">    529</span>     addrlist <span class="ansiyellow">=</span> <span class="ansiyellow">[</span><span class="ansiyellow">]</span><span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 530</span><span class="ansiyellow">     </span><span class="ansigreen">for</span> res <span class="ansigreen">in</span> _socket<span class="ansiyellow">.</span>getaddrinfo<span class="ansiyellow">(</span>host<span class="ansiyellow">,</span> port<span class="ansiyellow">,</span> family<span class="ansiyellow">,</span> type<span class="ansiyellow">,</span> proto<span class="ansiyellow">,</span> flags<span class="ansiyellow">)</span><span class="ansiyellow">:</span><span class="ansiyellow"></span>
+<span class="ansigreen">    531</span>         af<span class="ansiyellow">,</span> socktype<span class="ansiyellow">,</span> proto<span class="ansiyellow">,</span> canonname<span class="ansiyellow">,</span> sa <span class="ansiyellow">=</span> res<span class="ansiyellow"></span>
+
+<span class="ansired">gaierror</span>: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+<span class="ansired">ProtocolError</span>                             Traceback (most recent call last)
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/adapters.py</span> in <span class="ansicyan">send</span><span class="ansiblue">(self, request, stream, timeout, verify, cert, proxies)</span>
+<span class="ansigreen">    369</span>                     retries<span class="ansiyellow">=</span>self<span class="ansiyellow">.</span>max_retries<span class="ansiyellow">,</span><span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 370</span><span class="ansiyellow">                     </span>timeout<span class="ansiyellow">=</span>timeout<span class="ansiyellow"></span>
+<span class="ansigreen">    371</span>                 )
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/packages/urllib3/connectionpool.py</span> in <span class="ansicyan">urlopen</span><span class="ansiblue">(self, method, url, body, headers, retries, redirect, assert_same_host, timeout, pool_timeout, release_conn, **response_kw)</span>
+<span class="ansigreen">    596</span>             retries = retries.increment(method, url, error=e, _pool=self,
+<span class="ansigreen">--&gt; 597</span><span class="ansiyellow">                                         _stacktrace=sys.exc_info()[2])
+</span><span class="ansigreen">    598</span>             retries<span class="ansiyellow">.</span>sleep<span class="ansiyellow">(</span><span class="ansiyellow">)</span><span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/packages/urllib3/util/retry.py</span> in <span class="ansicyan">increment</span><span class="ansiblue">(self, method, url, response, error, _pool, _stacktrace)</span>
+<span class="ansigreen">    244</span>             <span class="ansigreen">if</span> read <span class="ansigreen">is</span> <span class="ansigreen">False</span><span class="ansiyellow">:</span><span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 245</span><span class="ansiyellow">                 </span><span class="ansigreen">raise</span> six<span class="ansiyellow">.</span>reraise<span class="ansiyellow">(</span>type<span class="ansiyellow">(</span>error<span class="ansiyellow">)</span><span class="ansiyellow">,</span> error<span class="ansiyellow">,</span> _stacktrace<span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">    246</span>             <span class="ansigreen">elif</span> read <span class="ansigreen">is</span> <span class="ansigreen">not</span> <span class="ansigreen">None</span><span class="ansiyellow">:</span><span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/packages/urllib3/packages/six.py</span> in <span class="ansicyan">reraise</span><span class="ansiblue">(tp, value, tb)</span>
+<span class="ansigreen">    308</span>         <span class="ansigreen">if</span> value<span class="ansiyellow">.</span>__traceback__ <span class="ansigreen">is</span> <span class="ansigreen">not</span> tb<span class="ansiyellow">:</span><span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 309</span><span class="ansiyellow">             </span><span class="ansigreen">raise</span> value<span class="ansiyellow">.</span>with_traceback<span class="ansiyellow">(</span>tb<span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">    310</span>         <span class="ansigreen">raise</span> value<span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/packages/urllib3/connectionpool.py</span> in <span class="ansicyan">urlopen</span><span class="ansiblue">(self, method, url, body, headers, retries, redirect, assert_same_host, timeout, pool_timeout, release_conn, **response_kw)</span>
+<span class="ansigreen">    543</span>                                                   timeout<span class="ansiyellow">=</span>timeout_obj<span class="ansiyellow">,</span><span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 544</span><span class="ansiyellow">                                                   body=body, headers=headers)
+</span><span class="ansigreen">    545</span> <span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/packages/urllib3/connectionpool.py</span> in <span class="ansicyan">_make_request</span><span class="ansiblue">(self, conn, method, url, timeout, **httplib_request_kw)</span>
+<span class="ansigreen">    340</span>         <span class="ansigreen">try</span><span class="ansiyellow">:</span><span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 341</span><span class="ansiyellow">             </span>self<span class="ansiyellow">.</span>_validate_conn<span class="ansiyellow">(</span>conn<span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">    342</span>         <span class="ansigreen">except</span> <span class="ansiyellow">(</span>SocketTimeout<span class="ansiyellow">,</span> BaseSSLError<span class="ansiyellow">)</span> <span class="ansigreen">as</span> e<span class="ansiyellow">:</span><span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/packages/urllib3/connectionpool.py</span> in <span class="ansicyan">_validate_conn</span><span class="ansiblue">(self, conn)</span>
+<span class="ansigreen">    761</span>         <span class="ansigreen">if</span> <span class="ansigreen">not</span> getattr<span class="ansiyellow">(</span>conn<span class="ansiyellow">,</span> <span class="ansiblue">&apos;sock&apos;</span><span class="ansiyellow">,</span> <span class="ansigreen">None</span><span class="ansiyellow">)</span><span class="ansiyellow">:</span>  <span class="ansired"># AppEngine might not have  &#96;.sock&#96;</span><span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 762</span><span class="ansiyellow">             </span>conn<span class="ansiyellow">.</span>connect<span class="ansiyellow">(</span><span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">    763</span> <span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/packages/urllib3/connection.py</span> in <span class="ansicyan">connect</span><span class="ansiblue">(self)</span>
+<span class="ansigreen">    203</span>         <span class="ansired"># Add certificate verification</span><span class="ansiyellow"></span><span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 204</span><span class="ansiyellow">         </span>conn <span class="ansiyellow">=</span> self<span class="ansiyellow">.</span>_new_conn<span class="ansiyellow">(</span><span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">    205</span> <span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/packages/urllib3/connection.py</span> in <span class="ansicyan">_new_conn</span><span class="ansiblue">(self)</span>
+<span class="ansigreen">    133</span>             conn = connection.create_connection(
+<span class="ansigreen">--&gt; 134</span><span class="ansiyellow">                 (self.host, self.port), self.timeout, **extra_kw)
+</span><span class="ansigreen">    135</span> <span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/packages/urllib3/util/connection.py</span> in <span class="ansicyan">create_connection</span><span class="ansiblue">(address, timeout, source_address, socket_options)</span>
+<span class="ansigreen">     63</span>     err <span class="ansiyellow">=</span> <span class="ansigreen">None</span><span class="ansiyellow"></span>
+<span class="ansigreen">---&gt; 64</span><span class="ansiyellow">     </span><span class="ansigreen">for</span> res <span class="ansigreen">in</span> socket<span class="ansiyellow">.</span>getaddrinfo<span class="ansiyellow">(</span>host<span class="ansiyellow">,</span> port<span class="ansiyellow">,</span> <span class="ansicyan">0</span><span class="ansiyellow">,</span> socket<span class="ansiyellow">.</span>SOCK_STREAM<span class="ansiyellow">)</span><span class="ansiyellow">:</span><span class="ansiyellow"></span>
+<span class="ansigreen">     65</span>         af<span class="ansiyellow">,</span> socktype<span class="ansiyellow">,</span> proto<span class="ansiyellow">,</span> canonname<span class="ansiyellow">,</span> sa <span class="ansiyellow">=</span> res<span class="ansiyellow"></span>
+
+<span class="ansigreen">/usr/lib/python3.4/socket.py</span> in <span class="ansicyan">getaddrinfo</span><span class="ansiblue">(host, port, family, type, proto, flags)</span>
+<span class="ansigreen">    529</span>     addrlist <span class="ansiyellow">=</span> <span class="ansiyellow">[</span><span class="ansiyellow">]</span><span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 530</span><span class="ansiyellow">     </span><span class="ansigreen">for</span> res <span class="ansigreen">in</span> _socket<span class="ansiyellow">.</span>getaddrinfo<span class="ansiyellow">(</span>host<span class="ansiyellow">,</span> port<span class="ansiyellow">,</span> family<span class="ansiyellow">,</span> type<span class="ansiyellow">,</span> proto<span class="ansiyellow">,</span> flags<span class="ansiyellow">)</span><span class="ansiyellow">:</span><span class="ansiyellow"></span>
+<span class="ansigreen">    531</span>         af<span class="ansiyellow">,</span> socktype<span class="ansiyellow">,</span> proto<span class="ansiyellow">,</span> canonname<span class="ansiyellow">,</span> sa <span class="ansiyellow">=</span> res<span class="ansiyellow"></span>
+
+<span class="ansired">ProtocolError</span>: (&apos;Connection aborted.&apos;, gaierror(-2, &apos;Name or service not known&apos;))
+
+During handling of the above exception, another exception occurred:
+
+<span class="ansired">ConnectionError</span>                           Traceback (most recent call last)
+<span class="ansigreen">&lt;ipython-input-10-41109a72a7aa&gt;</span> in <span class="ansicyan">&lt;module&gt;</span><span class="ansiblue">()</span>
+<span class="ansigreen">      4</span> &apos;layout&apos;: {
+<span class="ansigreen">      5</span>         <span class="ansiblue">&apos;barmode&apos;</span><span class="ansiyellow">:</span> <span class="ansiblue">&apos;stack&apos;</span><span class="ansiyellow">,</span><span class="ansiyellow"></span>
+<span class="ansigreen">----&gt; 6</span><span class="ansiyellow">         </span><span class="ansiblue">&apos;title&apos;</span><span class="ansiyellow">:</span> title<span class="ansiyellow"></span>
+<span class="ansigreen">      7</span>     }
+<span class="ansigreen">      8</span> })
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/plotly/plotly/plotly.py</span> in <span class="ansicyan">iplot</span><span class="ansiblue">(figure_or_data, **plot_options)</span>
+<span class="ansigreen">    137</span>     <span class="ansigreen">if</span> <span class="ansiblue">&apos;auto_open&apos;</span> <span class="ansigreen">not</span> <span class="ansigreen">in</span> plot_options<span class="ansiyellow">:</span><span class="ansiyellow"></span>
+<span class="ansigreen">    138</span>         plot_options<span class="ansiyellow">[</span><span class="ansiblue">&apos;auto_open&apos;</span><span class="ansiyellow">]</span> <span class="ansiyellow">=</span> <span class="ansigreen">False</span><span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 139</span><span class="ansiyellow">     </span>res <span class="ansiyellow">=</span> plot<span class="ansiyellow">(</span>figure_or_data<span class="ansiyellow">,</span> <span class="ansiyellow">**</span>plot_options<span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">    140</span>     urlsplit <span class="ansiyellow">=</span> res<span class="ansiyellow">.</span>split<span class="ansiyellow">(</span><span class="ansiblue">&apos;/&apos;</span><span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">    141</span>     username<span class="ansiyellow">,</span> plot_id <span class="ansiyellow">=</span> urlsplit<span class="ansiyellow">[</span><span class="ansiyellow">-</span><span class="ansicyan">2</span><span class="ansiyellow">]</span><span class="ansiyellow">[</span><span class="ansicyan">1</span><span class="ansiyellow">:</span><span class="ansiyellow">]</span><span class="ansiyellow">,</span> urlsplit<span class="ansiyellow">[</span><span class="ansiyellow">-</span><span class="ansicyan">1</span><span class="ansiyellow">]</span>  <span class="ansired"># TODO: HACKY!</span><span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/plotly/plotly/plotly.py</span> in <span class="ansicyan">plot</span><span class="ansiblue">(figure_or_data, validate, **plot_options)</span>
+<span class="ansigreen">    189</span>                 <span class="ansigreen">pass</span><span class="ansiyellow"></span>
+<span class="ansigreen">    190</span>     plot_options <span class="ansiyellow">=</span> _plot_option_logic<span class="ansiyellow">(</span>plot_options<span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 191</span><span class="ansiyellow">     </span>res <span class="ansiyellow">=</span> _send_to_plotly<span class="ansiyellow">(</span>figure<span class="ansiyellow">,</span> <span class="ansiyellow">**</span>plot_options<span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">    192</span>     <span class="ansigreen">if</span> res<span class="ansiyellow">[</span><span class="ansiblue">&apos;error&apos;</span><span class="ansiyellow">]</span> <span class="ansiyellow">==</span> <span class="ansiblue">&apos;&apos;</span><span class="ansiyellow">:</span><span class="ansiyellow"></span>
+<span class="ansigreen">    193</span>         <span class="ansigreen">if</span> plot_options<span class="ansiyellow">[</span><span class="ansiblue">&apos;auto_open&apos;</span><span class="ansiyellow">]</span><span class="ansiyellow">:</span><span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/plotly/plotly/plotly.py</span> in <span class="ansicyan">_send_to_plotly</span><span class="ansiblue">(figure, **plot_options)</span>
+<span class="ansigreen">   1253</span> <span class="ansiyellow"></span>
+<span class="ansigreen">   1254</span>     r = requests.post(url, data=payload,
+<span class="ansigreen">-&gt; 1255</span><span class="ansiyellow">                       verify=get_config()[&apos;plotly_ssl_verification&apos;])
+</span><span class="ansigreen">   1256</span>     r<span class="ansiyellow">.</span>raise_for_status<span class="ansiyellow">(</span><span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">   1257</span>     r <span class="ansiyellow">=</span> json<span class="ansiyellow">.</span>loads<span class="ansiyellow">(</span>r<span class="ansiyellow">.</span>text<span class="ansiyellow">)</span><span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/api.py</span> in <span class="ansicyan">post</span><span class="ansiblue">(url, data, json, **kwargs)</span>
+<span class="ansigreen">    106</span>     &quot;&quot;&quot;
+<span class="ansigreen">    107</span> <span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 108</span><span class="ansiyellow">     </span><span class="ansigreen">return</span> request<span class="ansiyellow">(</span><span class="ansiblue">&apos;post&apos;</span><span class="ansiyellow">,</span> url<span class="ansiyellow">,</span> data<span class="ansiyellow">=</span>data<span class="ansiyellow">,</span> json<span class="ansiyellow">=</span>json<span class="ansiyellow">,</span> <span class="ansiyellow">**</span>kwargs<span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">    109</span> <span class="ansiyellow"></span>
+<span class="ansigreen">    110</span> <span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/api.py</span> in <span class="ansicyan">request</span><span class="ansiblue">(method, url, **kwargs)</span>
+<span class="ansigreen">     48</span> <span class="ansiyellow"></span>
+<span class="ansigreen">     49</span>     session <span class="ansiyellow">=</span> sessions<span class="ansiyellow">.</span>Session<span class="ansiyellow">(</span><span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">---&gt; 50</span><span class="ansiyellow">     </span>response <span class="ansiyellow">=</span> session<span class="ansiyellow">.</span>request<span class="ansiyellow">(</span>method<span class="ansiyellow">=</span>method<span class="ansiyellow">,</span> url<span class="ansiyellow">=</span>url<span class="ansiyellow">,</span> <span class="ansiyellow">**</span>kwargs<span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">     51</span>     <span class="ansired"># By explicitly closing the session, we avoid leaving sockets open which</span><span class="ansiyellow"></span><span class="ansiyellow"></span>
+<span class="ansigreen">     52</span>     <span class="ansired"># can trigger a ResourceWarning in some cases, and look like a memory leak</span><span class="ansiyellow"></span><span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/sessions.py</span> in <span class="ansicyan">request</span><span class="ansiblue">(self, method, url, params, data, headers, cookies, files, auth, timeout, allow_redirects, proxies, hooks, stream, verify, cert, json)</span>
+<span class="ansigreen">    462</span>         }
+<span class="ansigreen">    463</span>         send_kwargs<span class="ansiyellow">.</span>update<span class="ansiyellow">(</span>settings<span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 464</span><span class="ansiyellow">         </span>resp <span class="ansiyellow">=</span> self<span class="ansiyellow">.</span>send<span class="ansiyellow">(</span>prep<span class="ansiyellow">,</span> <span class="ansiyellow">**</span>send_kwargs<span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">    465</span> <span class="ansiyellow"></span>
+<span class="ansigreen">    466</span>         <span class="ansigreen">return</span> resp<span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/sessions.py</span> in <span class="ansicyan">send</span><span class="ansiblue">(self, request, **kwargs)</span>
+<span class="ansigreen">    574</span> <span class="ansiyellow"></span>
+<span class="ansigreen">    575</span>         <span class="ansired"># Send the request</span><span class="ansiyellow"></span><span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 576</span><span class="ansiyellow">         </span>r <span class="ansiyellow">=</span> adapter<span class="ansiyellow">.</span>send<span class="ansiyellow">(</span>request<span class="ansiyellow">,</span> <span class="ansiyellow">**</span>kwargs<span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">    577</span> <span class="ansiyellow"></span>
+<span class="ansigreen">    578</span>         <span class="ansired"># Total elapsed time of the request (approximately)</span><span class="ansiyellow"></span><span class="ansiyellow"></span>
+
+<span class="ansigreen">/home/phyng/dev/zuobiao/zuobiaoenv/lib/python3.4/site-packages/requests/adapters.py</span> in <span class="ansicyan">send</span><span class="ansiblue">(self, request, stream, timeout, verify, cert, proxies)</span>
+<span class="ansigreen">    413</span> <span class="ansiyellow"></span>
+<span class="ansigreen">    414</span>         <span class="ansigreen">except</span> <span class="ansiyellow">(</span>ProtocolError<span class="ansiyellow">,</span> socket<span class="ansiyellow">.</span>error<span class="ansiyellow">)</span> <span class="ansigreen">as</span> err<span class="ansiyellow">:</span><span class="ansiyellow"></span>
+<span class="ansigreen">--&gt; 415</span><span class="ansiyellow">             </span><span class="ansigreen">raise</span> ConnectionError<span class="ansiyellow">(</span>err<span class="ansiyellow">,</span> request<span class="ansiyellow">=</span>request<span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<span class="ansigreen">    416</span> <span class="ansiyellow"></span>
+<span class="ansigreen">    417</span>         <span class="ansigreen">except</span> MaxRetryError <span class="ansigreen">as</span> e<span class="ansiyellow">:</span><span class="ansiyellow"></span>
+
+<span class="ansired">ConnectionError</span>: (&apos;Connection aborted.&apos;, gaierror(-2, &apos;Name or service not known&apos;))</pre>
 </div>
-
 </div>
 
 </div>
@@ -536,7 +1028,7 @@ div#notebook {
 <div class="output_area"><div class="prompt output_prompt">Out[11]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<iframe id="igraph" scrolling="no" style="border:none;"seamless="seamless" src="https://plot.ly/~animos/53.embed" height="525" width="100%"></iframe>
+<iframe id="igraph" scrolling="no" style="border:none;"seamless="seamless" src="https://plot.ly/~animos/221.embed" height="525" width="100%"></iframe>
 </div>
 
 </div>
@@ -588,7 +1080,7 @@ div#notebook {
 <div class="output_area"><div class="prompt output_prompt">Out[12]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<iframe id="igraph" scrolling="no" style="border:none;"seamless="seamless" src="https://plot.ly/~animos/54.embed" height="525" width="100%"></iframe>
+<iframe id="igraph" scrolling="no" style="border:none;"seamless="seamless" src="https://plot.ly/~animos/222.embed" height="525" width="100%"></iframe>
 </div>
 
 </div>
